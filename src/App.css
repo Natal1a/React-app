@@ -1,0 +1,54 @@
+
+
+.users-container{
+  display: grid;
+  grid-template-columns: 15em auto;
+}
+
+.list-container{
+  grid-column: 1 / 2;
+}
+
+.search{
+height: 4em;
+display: flex;
+align-items: baseline;
+position: fixed;
+}
+
+.users-list{
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  width: 15em;
+  top:2.5em;
+	left:0;
+  bottom:0;
+	position:fixed;
+}
+.users-list__element{
+  list-style: none;
+  padding: 0.5em 1em;
+  color: white;
+  border: 1px solid white;
+  background-color: grey;
+}
+
+.profiles-container{
+  display: grid;
+  grid-column: 2 / 3;
+  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 1em;
+}
+
+.user-profile{
+  border: 1px dotted lightgrey;
+  text-align: center;
+  padding: 1em;
+}
+.user-profile__photo{
+  width: 15em;
+  height: auto;
+}
